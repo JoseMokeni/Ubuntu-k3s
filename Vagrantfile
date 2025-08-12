@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
     vb.gui = false
     vb.memory = "8192"
     vb.cpus = 6
-    vb.name = "ubuntu-22.04"
+    vb.name = "ubuntu-k3s-24-04"
   end
 
   # provision the VM with a shell script
