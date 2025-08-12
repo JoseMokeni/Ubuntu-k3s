@@ -2,7 +2,7 @@ apt-get update
 apt-get install -y git curl
 
 # Install k3s
-curl -sfL https://get.k3s.io | sh -
+curl -sfL https://get.k3s.io | sh -s - server --tls-san k3s.local
 
 # Wait for k3s to be ready
 systemctl enable k3s
